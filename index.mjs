@@ -6,7 +6,6 @@ import { uploadPhoto, uploadPhrase } from "./services/uploadService.mjs";
 const bot = new Telegraf(TG_BOT_TOKEN);
 
 bot.command("start", (ctx) => {
-  console.log(ctx.from);
   bot.telegram.sendMessage(
     ctx.chat.id,
     "Qloq, puedes subir imagenes o frases para el juego what do you meme. Solo envia la imagen(como archivo) o la frase que quieras enviar"
